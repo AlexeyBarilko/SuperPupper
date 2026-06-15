@@ -1,0 +1,10 @@
+baseURL = "https://alexeybarilko.github.io/SuperPupper/"
+languageCode = 'ru-ru'
+title = 'Подлый блок'
+theme = 'ananke'
+relativeURLs = true
+canonifyURLs = false
+
+[params]
+  mainSections = ["posts"]
+  show_all_time_sections = true

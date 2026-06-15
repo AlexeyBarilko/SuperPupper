@@ -1,0 +1,19 @@
+services:
+
+  app:
+    build: .
+
+    container_name: maizel_demo
+
+    restart: unless-stopped
+    environment:
+      - GIT_AUTHOR_NAME=AlexeyBarilko
+      - GIT_AUTHOR_EMAIL=alexeybarilko@example.com
+      - GIT_COMMITTER_NAME=AlexeyBarilko
+      - GIT_COMMITTER_EMAIL=alexeybarilko@example.com
+
+    volumes:
+#      - ./maizel_site:/app/maizel_site
+#      - ./temp:/app/temp
+      - ./.git:/app/.git
+      - ./maizel_site:/app/maizel_site
